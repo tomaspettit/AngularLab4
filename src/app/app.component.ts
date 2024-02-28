@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { PresidentsComponent } from './presidents/presidents.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule, PresidentsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'myApp2';
+  total:number = 0;
+  hidden:boolean=false;
+
+  ImageClicked(){
+    this.hidden=!this.hidden;
+  }
+  
 }
