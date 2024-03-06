@@ -1,7 +1,9 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Red_star.svg" height="42" width="42" (dblclick)="ImageClicked()"><br>
 <br>
 <h2 *ngIf="hidden">Look at the star</h2><br>
-<button (click)="total=total+1">Press Me</button>
+<button (click)="total=total+1">Press Me</button><br><br>
+<button (click)="total=reset">Reset</button>
 <h2>The Number of times the button has been pressed is: {{total}}</h2>
+
 <hr>
 <app-presidents></app-presidents>

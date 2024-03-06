@@ -12,6 +12,7 @@ import { PresidentsComponent } from './presidents/presidents.component';
 })
 export class AppComponent {
   total:number = 0;
+  reset:number=0;
   hidden:boolean=false;
 
   ImageClicked(){
